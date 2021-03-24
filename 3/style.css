@@ -1,0 +1,79 @@
+.uppercase {
+    text-transform: uppercase;
+  }
+
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 40px 25% 40px 25%;    
+}
+
+/* title */
+h1 {
+    color: black;
+    font-family: neue-haas-grotesk-text,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+ /* subtitle */
+h2 {
+    color: black;
+    font-family: neue-haas-grotesk-text,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin: 5 0 0 0;
+    padding: 0;
+    height: 100px;
+}
+
+ /* subheadings */
+h3 {
+    color: black;
+    font-family: ff-spinoza-web-pro,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin: 50px 0px 20px 0px;
+}
+
+
+ /* writer and date */
+h4 {
+    color: black;
+    font-family: neue-haas-grotesk-text,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+
+}
+
+ /* caption */
+ h5 {
+    color: black;
+    font-family: ubuntu-mono,monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 4px;
+    line-height: 1.2em;
+
+}
+
+
+p {
+    color: black;
+    font-family: ff-spinoza-web-pro,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+

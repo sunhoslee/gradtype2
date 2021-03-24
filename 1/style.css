@@ -1,0 +1,78 @@
+.uppercase {
+    text-transform: uppercase;
+  }
+
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 40px 25% 40px 25%;    
+}
+
+/* title */
+h1 {
+    color: black;
+    font-family: freight-big-pro, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+ /* subtitle */
+h2 {
+    color: black;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin: 20 0 0 0;
+    padding: 0;
+}
+
+ /* subheadings */
+h3 {
+    color: black;
+    font-family: freight-big-pro,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin: 50px 0px 20px 0px;
+}
+
+
+ /* writer and date */
+h4 {
+    color: black;
+    font-family: freight-big-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+ /* caption */
+ h5 {
+    color: black;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.2em;
+
+}
+
+
+p {
+    color: black;
+    font-family: freight-big-pro,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
