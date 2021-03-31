@@ -12,13 +12,13 @@
 /* title */
 h1 {
     color: black;
-    font-family: ivypresto-headline,serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 45px;
+    font-family: archivo-black,sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 60px;
     margin: 0;
     padding: 0;
-    line-height: 1.1em;
+    line-height: 1em;
 }
 
  /* subtitle */
@@ -29,7 +29,7 @@ h2 {
     font-style: italic;
     font-size: 20px;
     line-height: 1.2em;
-    margin: 20 0 0 0;
+    margin: 5px 0 0 0;
     padding: 0;
     height: 100px;
 }
@@ -37,7 +37,7 @@ h2 {
  /* subheadings */
 h3 {
     color: black;
-    font-family: ivypresto-headline,serif;
+    font-family: pt-sans,sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 25px;

@@ -1,32 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@font-face {
+    font-family: 'GapSansBold';
+    src:    url('GapSansBold.ttf');
+}
+
+@font-face {
+    font-family: 'GT-Sectra-Fine-Book';
+    src:    url('GT-Sectra-Fine-Book.woff2');
+}
+
+
+
+
+body {
+    width: 100%;
+	margin: auto;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	hyphenate-limit-chars: 7 3 3;
+	-webkit-hyphenate-limit-before: 3;
+	-webkit-hyphenate-limit-after: 3;
+}
+
+
+#nytbanner{
+    background-color: white;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    font-size: 25px;
+    width: 100vw;
+    height: 20px;
+    padding: 30px;
+}
+
+#titlecontainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    width: 100vw;
+    height: 900px;
+    padding: 30px;
+}
+
+#title {
+    position: relative;
+    width: 65%;
+    justify-content: center;
+    height: 60vh;
+    margin: auto; 
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+
+#arrow {
+    width: 20%;
+    animation: arrow 1s ease alternate infinite; 
+}
+
+@keyframes arrow {
+    0% {
+        transform:translateY(0);
+        }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+.subtitlecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height:fit-content;
+}
+
+#subtitle{
+    font-size: 15px;
+    color: black;
+    padding: 30px;
+    flex-grow: 2;
+    height: 20px;
+    font-size: 20px;
+    border: 1px dotted black;
+}
+
+#writer {
+    font-size: 15px;
+    color: black;
+    padding: 30px;
+    flex-grow: 2;
+    height: 20px;
+    border: 1px dotted black;
+
+}
+
+
+.container1{
+    background-image: url(binary.jpg);
+    height: 80vh;
+}
+
+
+.intro {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 500px;
+    column-count: 2;
+    column-gap: 40px;
+    margin-left: 5%;
+    margin-top: 0%;
+    top: 10%;
+    padding: 1%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid black;
+    overflow: scroll;
+    filter: drop-shadow(0px 0px 10px black);
   }
 
 
 .content {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 40px 25% 40px 25%;    
+    width: 70%;
+    position: sticky;
+    position: -webkit-sticky;
+    margin: auto;   
 }
 
 /* title */
 h1 {
-    color: black;
-    font-family: neue-haas-grotesk-text,sans-serif;
+    color: white;
+    font-family: GapSansBold,sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 60px;
+    font-size: 100px;
     margin: 0;
-    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
     line-height: 1em;
+    letter-spacing: 3px;
 }
 
  /* subtitle */
 h2 {
-    color: black;
-    font-family: neue-haas-grotesk-text,sans-serif;
+    color: white;
+    font-family: 'GT-Sectra-Fine-Book',serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+
+h3 {
+    color: black;
+    font-family: 'GT-Sectra-Fine-Book',serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     line-height: 1.2em;
     margin: 5 0 0 0;
@@ -34,46 +203,41 @@ h2 {
     height: 100px;
 }
 
- /* subheadings */
-h3 {
-    color: black;
-    font-family: ff-spinoza-web-pro,serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-    margin: 50px 0px 20px 0px;
-}
-
-
- /* writer and date */
-h4 {
-    color: black;
-    font-family: neue-haas-grotesk-text,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-
-}
-
- /* caption */
- h5 {
-    color: black;
-    font-family: ubuntu-mono,monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    margin-top: 4px;
-    line-height: 1.2em;
-
-}
 
 
 p {
     color: black;
-    font-family: ff-spinoza-web-pro,serif;
+    font-family: 'GT-Sectra-Fine-Book',serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     line-height: 1.2em;
 }
 
+
+img, video {
+	width: 100%;
+}
+
+figure {
+	display: inline-block;
+}
+
+figcaption {
+    font-family: ubuntu-mono,monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 27px;
+    line-height: 1.3em;
+}
+
+
+
+.heading {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin: 50px 0px 10px 0px;
+}

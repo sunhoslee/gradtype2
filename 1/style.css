@@ -1,12 +1,51 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 .uppercase {
     text-transform: uppercase;
   }
 
-
-.content {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 40px 25% 40px 25%;    
+body {
+	max-width: 620px;
+	min-width: 325px;
+	padding: 0 25px 0 25px;
+	margin: auto;
+	margin-top: 50px;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-lines: 2;
+	hyphenate-limit-chars: 7 3 3;
+	-webkit-hyphenate-limit-before: 3;
+	-webkit-hyphenate-limit-after: 3;
+	/*text-align: justify;*/
+	/*letter-spacing: .02em;*/
 }
 
 /* title */
@@ -15,10 +54,10 @@ h1 {
     font-family: freight-big-pro, serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 60px;
-    margin: 0;
-    padding: 0;
+    font-size: 50px;
     line-height: 1em;
+    margin-bottom: 10px;
+
 }
 
  /* subtitle */
@@ -29,7 +68,7 @@ h2 {
     font-style: normal;
     font-size: 20px;
     line-height: 1.2em;
-    margin: 20 0 0 0;
+	margin-bottom: 27px;
     padding: 0;
 }
 
@@ -51,6 +90,8 @@ h4 {
     font-weight: 400;
     font-style: italic;
     font-size: 20px;
+    margin-bottom: 5px;
+
 
 }
 
@@ -62,6 +103,8 @@ h4 {
     font-style: normal;
     font-size: 15px;
     margin-top: 8px;
+    margin-bottom: 27px;
+
     line-height: 1.2em;
 
 }
@@ -74,5 +117,10 @@ p {
     font-style: normal;
     font-size: 20px;
     line-height: 1.2em;
+    margin-bottom: 27px;
+
 }
 
+img, video {
+    width: 100%;
+}
