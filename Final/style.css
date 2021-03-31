@@ -56,29 +56,27 @@ body {
 #nytbanner{
     background-color: white;
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     height: 20px;
-    padding: 30px;
+    padding: 20px 6% 20px 6%;
+
 }
 
 #titlecontainer{
     background-color: black;
-    display: flex;
-    justify-content: flex-start;
-    flex: 1 1 430px;
     position: relative;
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding: 30px 0px 50px 6%;
 }
 
 #title {
     position: relative;
     width: 65%;
-    justify-content: center;
+    justify-content: left;
+    align-content: left;
     height: auto;
-    margin: auto; 
 }
 
 .uppercase {
@@ -114,9 +112,12 @@ body {
 #subtitle{
     font-size: 15px;
     color: black;
-    padding: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     flex-grow: 2;
-    height: 20px;
+    height: 25px;
     font-size: 20px;
     border: 1px dotted black;
 }
@@ -124,9 +125,12 @@ body {
 #writer {
     font-size: 15px;
     color: black;
-    padding: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     flex-grow: 3;
-    height: 20px;
+    height: 25px;
     border: 1px dotted black;
     font-size: 16px;
     line-height: 1em;
@@ -203,7 +207,6 @@ body {
      margin-left: 50%;
      margin-top: 5%;
      margin-bottom: 5%;
-     top: 5%;
      padding: 1%;
      text-align: left;
      background-color: white;
@@ -350,4 +353,74 @@ figcaption {
     font-style: normal;
     font-size: 30px;
     margin: 20px 0px 20px 0px;
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+    #nytbanner {
+        font-size: 15px;
+        padding: 20px 12% 20px 12%;
+
+    }
+
+    #title {
+        width: 70%;
+        }
+
+    #titlecontainer {
+        padding: 30px 0px 50px 12%;
+
+    }
+
+    #subtitle, #writer {
+        font-size: 15px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+
+    p {
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    .container1, .container2{
+        flex-direction: column;
+    }
+
+    .intro, .content, .content4 {
+        width: 80%;
+        margin-left: 10%;
+        padding: 2%;
+    }
+
+    .intro-img, .img-3{
+        position: relative;
+        width: 80%;
+
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 50px;   
+    }
+
+    #title {
+    width: 80%;
+    }
+
+    #subtitle, #writer {
+        font-size: 14px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+
 }
