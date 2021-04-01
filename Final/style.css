@@ -260,7 +260,6 @@ body {
 
   .img-3-cap{
     position: relative;
-    width: 90%;
     height: auto;
     left: 0%;
     padding: 3%;
@@ -296,7 +295,6 @@ h2 {
     line-height: 1.2em;
 }
 
-
 h3 {
     color: black;
     font-family: 'GT-Sectra-Fine-Book',serif;
@@ -308,8 +306,6 @@ h3 {
     padding: 0 0 0 6%;
     height: 100px;
 }
-
-
 
 p {
     color: black;
@@ -377,8 +373,8 @@ figcaption {
     #subtitle, #writer {
         font-size: 15px;
         padding-left: 12%;
+        padding-right: 12%;
     }
-
 
     p {
         font-size: 18px;
@@ -401,7 +397,7 @@ figcaption {
 
     .intro-img, .img-3{
         position: relative;
-        width: 76%;
+        width: 80%;
     }
 }
 
@@ -429,6 +425,8 @@ figcaption {
     #subtitle {
         font-size: 14px;
         padding-left: 12%;
+        padding-right: 12%;
+        padding-bottom: 5%;
         height: 55px;
     }
 
